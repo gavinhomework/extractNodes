@@ -88,7 +88,7 @@ async function handleRequest(request) {
 	let proxiesNames = []
 	for (let i = 0; i < proxiesArray.length; i++) {
 		var obj = JSON.parse(proxiesArray[i])
-		obj.name = "节点"+ (i+1)
+		obj.name = "轮子"+ (i+1)
 	
 		proxiesArray[i] = JSON.stringify(obj)
 		proxiesNames.push(obj.name)
